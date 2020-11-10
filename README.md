@@ -9,3 +9,6 @@ Aprenda a adicionar arquivos em suas aplicações feita pelo Tasker + App Factor
 
 ### Apk modificado
 [Adcional_Files Mod](https://github.com/GlitchYou/adicional-files-in-apk/blob/main/Adicional_Files_Mod.apk?raw=true)
+
+### Apk Editor não oficial
+[APKEditorPro_NoOfficial](https://github.com/GlitchYou/Construct3-to-apk/blob/main/APKEditorPro_NoOfficial.apk?raw=true)
