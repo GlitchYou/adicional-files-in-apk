@@ -1,0 +1,736 @@
+<TaskerData sr="" dvi="1" tv="5.11.7.beta">
+	<dmetric>1080.0,1920.0</dmetric>
+	<Project sr="proj0" ve="2">
+		<cdate>1604943067833</cdate>
+		<name>Adicional Files</name>
+		<psort>ActiveAlpha</psort>
+		<scenes>AF - Exemplo</scenes>
+		<tids>93,39,4,95,40</tids>
+		<Kid sr="Kid">
+			<launchID>4</launchID>
+			<pkg>com.add.files</pkg>
+			<vTarg>21</vTarg>
+			<vnme>1.0</vnme>
+			<vnum>11</vnum>
+		</Kid>
+		<Img sr="icon" ve="2">
+			<nme>cust_appshortcut_settings</nme>
+		</Img>
+	</Project>
+	<Scene sr="sceneAF - Exemplo">
+		<cdate>1604943174487</cdate>
+		<edate>1604976693733</edate>
+		<heightLand>-1</heightLand>
+		<heightPort>1920</heightPort>
+		<nme>AF - Exemplo</nme>
+		<widthLand>-1</widthLand>
+		<widthPort>1080</widthPort>
+		<WebElement sr="elements0" ve="2">
+			<flags>4</flags>
+			<geom>0,0,1080,1920,0,0,10800,19200</geom>
+			<linkclickTask>40</linkclickTask>
+			<Str sr="arg0" ve="3">WebView</Str>
+			<Int sr="arg1" val="2"/>
+			<Str sr="arg2" ve="3">%html</Str>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+			<LinkClickFilter sr="filter0">
+				<stopEvent>true</stopEvent>
+				<urlMatch>export:</urlMatch>
+			</LinkClickFilter>
+		</WebElement>
+		<PropertiesElement sr="props">
+			<itemselectedTask>39</itemselectedTask>
+			<Int sr="arg0" val="2"/>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3">#FFFFFFFF</Str>
+			<Int sr="arg3" val="0"/>
+			<Str sr="arg4" ve="3">Add Files In APK</Str>
+			<Str sr="arg5" ve="3"/>
+			<Img sr="arg6" ve="2"/>
+			<Str sr="arg7" ve="3">Imagem,Música,Exportar</Str>
+			<ListElementItem sr="item0">
+				<label>Avançado</label>
+				<Action sr="action" ve="7">
+					<code>130</code>
+					<Str sr="arg0" ve="3">AF - Testar Ação</Str>
+					<Int sr="arg1">
+						<var>%priority</var>
+					</Int>
+					<Str sr="arg2" ve="3"/>
+					<Str sr="arg3" ve="3"/>
+					<Str sr="arg4" ve="3"/>
+					<Int sr="arg5" val="0"/>
+					<Int sr="arg6" val="0"/>
+					<Str sr="arg7" ve="3"/>
+					<Int sr="arg8" val="0"/>
+					<Int sr="arg9" val="0"/>
+				</Action>
+			</ListElementItem>
+			<ListElementItem sr="item1">
+				<label>Sair</label>
+				<Action sr="action" ve="7">
+					<code>139</code>
+				</Action>
+			</ListElementItem>
+		</PropertiesElement>
+	</Scene>
+	<Task sr="task39">
+		<cdate>1604943290035</cdate>
+		<edate>1604943290035</edate>
+		<id>39</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%html</Str>
+			<Str sr="arg1" ve="3">&lt;style&gt;
+
+img { width: 100%; height: 100%; }
+
+&lt;/style&gt;
+
+&lt;img src="file:///android_asset/image.jpg"/&gt;</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%tap_label</lhs>
+					<op>2</op>
+					<rhs>Imagem</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%html</Str>
+			<Str sr="arg1" ve="3">&lt;style&gt;
+
+audio { width: 100%; }
+
+&lt;/style&gt;
+
+&lt;audio src="file:///android_asset/audio.wav" controls&gt;
+&lt;/audio&gt;</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%tap_label</lhs>
+					<op>2</op>
+					<rhs>Música</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%html</Str>
+			<Str sr="arg1" ve="3">&lt;style&gt;
+
+button { width: 100%; height: 100%; }
+
+&lt;/style&gt;
+
+&lt;button
+onclick='window.location.href = "export:"'&gt;
+
+Exportar aquivos para a memória interna
+
+&lt;/button&gt;</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%tap_label</lhs>
+					<op>2</op>
+					<rhs>Exportar</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>53</code>
+			<Str sr="arg0" ve="3">AF - Exemplo</Str>
+			<Str sr="arg1" ve="3">WebView</Str>
+			<Int sr="arg2" val="11"/>
+			<Str sr="arg3" ve="3"/>
+		</Action>
+	</Task>
+	<Task sr="task4">
+		<cdate>1602365606626</cdate>
+		<edate>1604976496844</edate>
+		<id>4</id>
+		<nme>AF - Princípal</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%html</Str>
+			<Str sr="arg1" ve="3">&lt;style&gt;
+
+img { width: 100%; height: 100%; }
+
+&lt;/style&gt;
+
+&lt;img src="file:///android_asset/image.jpg"/&gt;</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>47</code>
+			<Str sr="arg0" ve="3">AF - Exemplo</Str>
+			<Int sr="arg1" val="6"/>
+			<Int sr="arg2" val="100"/>
+			<Int sr="arg3" val="100"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>49</code>
+			<Str sr="arg0" ve="3">AF - Exemplo</Str>
+		</Action>
+	</Task>
+	<Task sr="task40">
+		<cdate>1604943531757</cdate>
+		<edate>1604943531757</edate>
+		<id>40</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>664</code>
+			<Str sr="arg0" ve="3">%pkg</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getBasePackageName
+{String} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%pkg</lhs>
+					<op>3</op>
+					<rhs>net.dinglisch.android.taskerm</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">AF - Exportar Arquivos do APK</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">image.jpg</Str>
+			<Str sr="arg3" ve="3">/sdcard/image_exported.jpg</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">AF - Exportar Arquivos do APK</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3">audio.wav</Str>
+			<Str sr="arg3" ve="3">/sdcard/audio_exported.wav</Str>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Crie um app com audio.wav/image.jpg para executar essa ação</Str>
+			<Int sr="arg1" val="1"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task93">
+		<cdate>1604961994746</cdate>
+		<edate>1604976705701</edate>
+		<id>93</id>
+		<nme>AF - Testar Ação</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>360</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">JavaScript</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3">%default</Str>
+			<Int sr="arg4">
+				<var>999</var>
+			</Int>
+			<Str sr="arg5" ve="3">131153</Str>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">eval(input)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<ProfileVariable sr="pv0">
+			<pvci>false</pvci>
+			<pvd></pvd>
+			<pvdn></pvdn>
+			<pvid>93</pvid>
+			<pvit>t</pvit>
+			<pvn>%default</pvn>
+			<pvt>t</pvt>
+			<pvv>function run(par1, par2) {
+
+name = "AF - Exportar Arquivos do APK"
+
+performTask(name, 100, par1, par2);
+
+}
+
+run("", "");</pvv>
+		</ProfileVariable>
+	</Task>
+	<Task sr="task95">
+		<cdate>1597795064976</cdate>
+		<edate>1604976717924</edate>
+		<id>95</id>
+		<nme>AF - Exportar Arquivos do APK</nme>
+		<pri>100</pri>
+		<Share sr="Share">
+			<d>export files apk</d>
+			<p>false</p>
+			<t></t>
+		</Share>
+		<Action sr="act0" ve="7">
+			<code>300</code>
+			<label>WebView, URI: file:///android_asset/licences.html</label>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>300</code>
+			<label>Parâmetro 1 (%par1): arquivo_origem_em_assets.txt</label>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">buf</Str>
+			<Str sr="arg1" ve="3">byte[]</Str>
+			<Str sr="arg2" ve="3">new
+{byte[]} (int)</Str>
+			<Str sr="arg3" ve="3">%out</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">len</Str>
+			<Str sr="arg1" ve="3">is</Str>
+			<Str sr="arg2" ve="3">read
+{int} (byte[])</Str>
+			<Str sr="arg3" ve="3">buf</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3"/>
+			<Str sr="arg1" ve="3">out</Str>
+			<Str sr="arg2" ve="3">write
+{} (byte[], int, int)</Str>
+			<Str sr="arg3" ve="3">buf</Str>
+			<Str sr="arg4" ve="3">0</Str>
+			<Str sr="arg5" ve="3">len</Str>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">Arquivo %par2 extraído</Str>
+			<Int sr="arg1" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%err</lhs>
+					<op>2</op>
+					<rhs>\%err</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>548</code>
+			<Str sr="arg0" ve="3">%par1 não existe</Str>
+			<Int sr="arg1" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%err</lhs>
+					<op>3</op>
+					<rhs>\%err</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act15" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act16" ve="7">
+			<code>664</code>
+			<label>List</label>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%list</Str>
+			<Str sr="arg1" ve="3">am</Str>
+			<Str sr="arg2" ve="3">list
+{String[]} (String)</Str>
+			<Str sr="arg3" ve="3">"%par1"</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act17" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%list</Str>
+			<Str sr="arg1" ve="3">am</Str>
+			<Str sr="arg2" ve="3">list
+{String[]} (String)</Str>
+			<Str sr="arg3" ve="3">""</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act18" ve="7">
+			<code>355</code>
+			<Str sr="arg0" ve="3">%list</Str>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">...</Str>
+			<Int sr="arg3" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act19" ve="7">
+			<code>378</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%ld_button
+Button
+The label of the button that was clicked&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;%ld_selected
+Selected
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;%ld_selected_index
+Selected Index
+&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES2&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;%ld_long
+Long
+true if item was long clicked, false otherwise&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES3&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg10" val="0"/>
+			<Int sr="arg11" val="0"/>
+			<Int sr="arg12" val="0"/>
+			<Str sr="arg2" ve="3">LIsta de arquivos</Str>
+			<Str sr="arg3" ve="3">%list()</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9">
+				<var>999</var>
+			</Int>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>300</code>
+			<label>Parâmetro 2 (%par2): /sdcard/destino.txt</label>
+		</Action>
+		<Action sr="act20" ve="7">
+			<code>598</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">[^/]+$</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="1"/>
+			<Str sr="arg7" ve="3"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>...</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act21" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">/%ld_selected</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>3</op>
+					<rhs>...</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act22" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">%ld_selected</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5" val="3"/>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%par1</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>3</op>
+					<rhs>...</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act23" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="1"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3">List</Str>
+			<ConditionList sr="if">
+				<bool0>Or</bool0>
+				<Condition sr="c0" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>5</op>
+					<rhs>\.[a-zA-Z]\w{2,}$</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%ld_selected</lhs>
+					<op>2</op>
+					<rhs>...</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act24" ve="7">
+			<code>598</code>
+			<Str sr="arg0" ve="3">%par1</Str>
+			<Str sr="arg1" ve="3">[^/]+$</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Str sr="arg5" ve="3">%file</Str>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+		</Action>
+		<Action sr="act25" ve="7">
+			<code>360</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES>&lt;StringArray sr=""&gt;&lt;_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;%input
+Input
+The text that was inserted in the dialog&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES0&gt;&lt;/StringArray&gt;</net.dinglisch.android.tasker.RELEVANT_VARIABLES>
+					<net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>[Ljava.lang.String;</net.dinglisch.android.tasker.RELEVANT_VARIABLES-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">Exportar para</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3">/sdcard/%file(&lt;)</Str>
+			<Int sr="arg4">
+				<var>999</var>
+			</Int>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+		</Action>
+		<Action sr="act26" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%par2</Str>
+			<Str sr="arg1" ve="3">%input</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+		</Action>
+		<Action sr="act27" ve="7">
+			<code>135</code>
+			<Int sr="arg0" val="0"/>
+			<Int sr="arg1" val="1"/>
+			<Str sr="arg2" ve="3"/>
+		</Action>
+		<Action sr="act28" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>319</code>
+			<Str sr="arg0" ve="3">android.permission.WRITE_EXTERNAL_STORAGE</Str>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">am</Str>
+			<Str sr="arg1" ve="3">CONTEXT</Str>
+			<Str sr="arg2" ve="3">getAssets
+{AssetManager} ()</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%par2</lhs>
+					<op>12</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">is</Str>
+			<Str sr="arg1" ve="3">am</Str>
+			<Str sr="arg2" ve="3">open
+{InputStream} (String)</Str>
+			<Str sr="arg3" ve="3">"%par1"</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">dst</Str>
+			<Str sr="arg1" ve="3">File</Str>
+			<Str sr="arg2" ve="3">new
+{File} (String)</Str>
+			<Str sr="arg3" ve="3">"%par2"</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">out</Str>
+			<Str sr="arg1" ve="3">FileOutputStream</Str>
+			<Str sr="arg2" ve="3">new
+{OutputStream} (File)</Str>
+			<Str sr="arg3" ve="3">dst</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>664</code>
+			<se>false</se>
+			<Str sr="arg0" ve="3">%out</Str>
+			<Str sr="arg1" ve="3">is</Str>
+			<Str sr="arg2" ve="3">available
+{int} ()</Str>
+			<Str sr="arg3" ve="3">"%par1"</Str>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Str sr="arg9" ve="3"/>
+		</Action>
+	</Task>
+</TaskerData>
